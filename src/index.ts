@@ -15,4 +15,5 @@
  * limitations under the License.
  */
 
-export * from './middleware/logger';
+export * from './middleware/log';
+export * from './middleware/parse';
