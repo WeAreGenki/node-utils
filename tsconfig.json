@@ -1,0 +1,14 @@
+// https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+
+{
+  "extends": "@minna-ui/ts-config",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "declaration": true,
+    "importHelpers": true,
+    "module": "commonjs",
+    "outDir": "lib",
+    "target": "es2018"
+  },
+  "include": ["src"]
+}

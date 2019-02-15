@@ -1,0 +1,95 @@
+{
+  "name": "@wearegenki/node-utils",
+  "version": "0.0.0",
+  "description": "Reusable utilities for node apps.",
+  "repository": "https://github.com/WeAreGenki/node-utils",
+  "bugs": "https://github.com/WeAreGenki/node-utils/issues",
+  "homepage": "https://github.com/WeAreGenki/node-utils",
+  "author": "Max Milton <max@wearegenki.com>",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "prebuild": "cp src/types.d.ts lib/types.d.ts",
+    "preinstall": "node scripts/check-yarn.js",
+    "lint": "yarn lint:md && yarn lint:js && yarn lint:types",
+    "lint:md": "remark --frail --quiet .",
+    "lint:js": "eslint --ext html,js,md,svelte,ts .",
+    "lint:types": "tsc --noEmit",
+    "test": "yarn lint && JEST_CIRCUS=1 jest --notify --watch",
+    "test-ci": "JEST_CIRCUS=1 jest --coverage --runInBand --ci"
+  },
+  "peerDependencies": {
+    "tslib": "1.9.3"
+  },
+  "dependencies": {
+    "colorette": "^1.0.7"
+  },
+  "devDependencies": {
+    "@minna-ui/eslint-config": "0.21.0",
+    "@minna-ui/jest-config": "0.21.0",
+    "@minna-ui/prettier-config": "0.21.0",
+    "@minna-ui/remarklint-config": "0.21.0",
+    "@minna-ui/ts-config": "0.21.0",
+    "@wearegenki/renovate-config": "1.0.0",
+    "eslint": "5.13.0",
+    "jest": "24.1.0",
+    "remark-cli": "6.0.1",
+    "svelte": "^3.0.0-beta.3",
+    "tslib": "1.9.3",
+    "typescript": "3.3.3"
+  },
+  "resolutions": {
+    "**/@minna-ui/eslint-config": "link:../../../minna-ui/utils/eslint-config",
+    "**/@minna-ui/jest-config": "link:../../../minna-ui/utils/jest-config",
+    "**/@minna-ui/prettier-config": "link:../../../minna-ui/utils/prettier-config",
+    "**/@minna-ui/remarklint-config": "link:../../../minna-ui/utils/remarklint-config",
+    "**/@minna-ui/ts-config": "link:../../../minna-ui/utils/ts-config"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@minna-ui/eslint-config",
+      "@minna-ui/eslint-config/node"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
+  "eslintIgnore": [
+    "lib/**",
+    "test/coverage/**"
+  ],
+  "remarkConfig": {
+    "plugins": [
+      "@minna-ui/remarklint-config"
+    ]
+  },
+  "jest": {
+    "preset": "@minna-ui/jest-config",
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ]
+  },
+  "renovate": {
+    "extends": [
+      "@wearegenki"
+    ]
+  },
+  "engines": {
+    "node": ">10.0.0",
+    "yarn": ">1.12.0"
+  },
+  "os": [
+    "!win32",
+    "darwin",
+    "freebsd",
+    "linux",
+    "openbsd"
+  ]
+}
