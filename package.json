@@ -92,5 +92,8 @@
     "freebsd",
     "linux",
     "openbsd"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
