@@ -37,10 +37,10 @@
     "@minna-ui/remarklint-config": "0.21.0",
     "@minna-ui/ts-config": "0.21.0",
     "@wearegenki/renovate-config": "1.0.0",
-    "eslint": "5.14.0",
+    "eslint": "5.13.0",
     "jest": "24.1.0",
     "remark-cli": "6.0.1",
-    "svelte": "^3.0.0-beta.3",
+    "svelte": "3.0.0-beta.3",
     "tslib": "1.9.3",
     "typescript": "3.3.3"
   },
