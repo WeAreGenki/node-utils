@@ -44,13 +44,6 @@
     "tslib": "1.9.3",
     "typescript": "3.3.3"
   },
-  "resolutions": {
-    "**/@minna-ui/eslint-config": "link:../../../minna-ui/utils/eslint-config",
-    "**/@minna-ui/jest-config": "link:../../../minna-ui/utils/jest-config",
-    "**/@minna-ui/prettier-config": "link:../../../minna-ui/utils/prettier-config",
-    "**/@minna-ui/remarklint-config": "link:../../../minna-ui/utils/remarklint-config",
-    "**/@minna-ui/ts-config": "link:../../../minna-ui/utils/ts-config"
-  },
   "eslintConfig": {
     "root": true,
     "extends": [
