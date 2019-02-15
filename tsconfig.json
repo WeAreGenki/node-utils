@@ -4,13 +4,16 @@
   "extends": "@minna-ui/ts-config",
   "compilerOptions": {
     "allowJs": false,
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "checkJs": false,
     "declaration": true,
     "importHelpers": true,
     "module": "commonjs",
     "outDir": "lib",
-    "target": "es2018"
+    "target": "es2018",
+
+    // disable overly strict rules
+    "noUnusedParameters": false
   },
   "include": ["src"]
 }
