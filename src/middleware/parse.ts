@@ -2,6 +2,8 @@ import { IReq, IRes, Next } from '../types';
 
 /**
  * Parse raw request body data and convert it to JSON.
+ * NOTE: This is intentionally simple and should not be considered
+ * secure. Do not use anywhere security is important!!
  */
 export function parse(req: IReq, res: IRes, next: Next): void {
   let data = '';
