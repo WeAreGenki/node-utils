@@ -17,7 +17,6 @@
     "build": "tsc",
     "prebuild": "rm -rf lib",
     "postbuild": "cp src/types.d.ts lib/",
-    "preinstall": "node scripts/check-yarn.js",
     "lint": "yarn lint:md && yarn lint:js && yarn lint:types",
     "lint:md": "remark --frail --quiet .",
     "lint:js": "eslint --ext html,js,md,svelte,ts .",
