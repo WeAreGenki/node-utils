@@ -7,11 +7,15 @@ Reusable utilities for node apps.
 
 ## Usage
 
+### Install
+
 ```sh
 yarn add -D @wearegenki/node-utils
 ```
 
-TODO: Write me.
+### Use
+
+Have a look at [the exported modules](https://github.com/WeAreGenki/node-utils/blob/master/src/index.ts) and go from there.
 
 ## Licence
 
