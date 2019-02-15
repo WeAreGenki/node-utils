@@ -3,7 +3,9 @@
 {
   "extends": "@minna-ui/ts-config",
   "compilerOptions": {
+    "allowJs": false,
     "baseUrl": "./src",
+    "checkJs": false,
     "declaration": true,
     "importHelpers": true,
     "module": "commonjs",
