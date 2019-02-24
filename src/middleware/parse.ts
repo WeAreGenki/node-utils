@@ -14,7 +14,11 @@ export function parse(req: IReq, res: IRes, next: Next): void {
     req.rawBody = data;
     const contentType = req.headers['content-type'];
     if (contentType && contentType.indexOf('application/json') === 0) {
-      req.body = JSON.parse(data);
+      try {
+        req.body = JSON.parse(data);
+      } catch (err) {
+        // noop
+      }
     }
     next();
   });
