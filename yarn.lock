@@ -428,10 +428,10 @@
     jest-haste-map "^24.3.1"
     jest-resolve "^24.3.1"
 
-"@minna-ui/prettier-config@0.22.0-next.77":
-  version "0.22.0-next.77"
-  resolved "https://registry.yarnpkg.com/@minna-ui/prettier-config/-/prettier-config-0.22.0-next.77.tgz#9d9477a270ac95d7c0b3c013162ebae56ea48a1c"
-  integrity sha512-ZRfQuzIT3ZfoOWOvsSWr7czleDIfK+eeEY/OtQcW2AQsRtveqWCGTFnY7Y5uMHUeo/+OiMVnQJxOg9MFpPclbQ==
+"@minna-ui/prettier-config@0.22.0-next.193":
+  version "0.22.0-next.193"
+  resolved "https://registry.yarnpkg.com/@minna-ui/prettier-config/-/prettier-config-0.22.0-next.193.tgz#e0238b48bfe8ff8a61280884bc58f011716eddf6"
+  integrity sha512-FbmS3Aqnxa/fg1r67idcDAKTrP2afm9YtD+TtTFhQvQe2HOnSoLD0RZI/y9USXGnY2KcH1B8Qybhl/ajCbzgDw==
   dependencies:
     "@types/prettier" "^1.16.0"
     deepmerge "^3.1.0"
