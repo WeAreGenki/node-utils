@@ -39,7 +39,7 @@
     "@minna-ui/remarklint-config": "0.22.0-next.77",
     "@minna-ui/ts-config": "0.22.0-next.77",
     "@wearegenki/renovate-config": "1.0.0",
-    "eslint": "5.14.1",
+    "eslint": "5.15.1",
     "jest": "24.1.0",
     "prettier": "1.16.4",
     "remark-cli": "6.0.1",
