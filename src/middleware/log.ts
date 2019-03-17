@@ -24,11 +24,10 @@ export function log(req: IReq, res: IRes, next: Next): void {
   let byteLength = 0;
 
   // monkey patch to calculate response byte size
-  res.write = function writeFn(data) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  res.write = function writeFn(data: any, ...rest: any[]) {
     if (data) byteLength += data.length;
-    // @ts-ignore
-    // eslint-disable-next-line prefer-rest-params
-    write(...arguments);
+    return write(data, ...rest);
   };
 
   function writeLog(): void {

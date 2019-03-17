@@ -16,11 +16,7 @@ export interface IReq extends ClientRequest {
   body: object;
 }
 
-// @ts-ignore
-export interface IRes extends ServerResponse {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  write: (data: any) => void;
-}
+export interface IRes extends ServerResponse {}
 
 export { ServerResponse };
 
