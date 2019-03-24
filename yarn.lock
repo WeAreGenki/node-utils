@@ -5392,10 +5392,10 @@ supports-color@^6.0.0, supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-svelte@3.0.0-beta.13:
-  version "3.0.0-beta.13"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.0.0-beta.13.tgz#b5ddea8463db7acd4ca229b1dce8f47a1c42fcad"
-  integrity sha512-Ne7WVb7lrTB+p3K7i3oNUxA9fZUuGK2BkyuVkA10cbZhESacjW7zQfJwrytgODCzASPTNQhcyzCdfOKmyx8jsA==
+svelte@3.0.0-beta.20:
+  version "3.0.0-beta.20"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.0.0-beta.20.tgz#dd99eb500bd9b2c259a6fde1ddcff32115767624"
+  integrity sha512-IEZrUseN2Hzpo1KFdyZf3Neqw7abbXLU7oRRkyBVm0iT1PQKHj8G75hR0wISvz7pOegYisiVFdi3C5Asz4ps9Q==
 
 symbol-tree@^3.2.2:
   version "3.2.2"
