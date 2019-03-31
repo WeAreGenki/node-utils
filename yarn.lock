@@ -441,16 +441,16 @@
     eslint-plugin-security "^1.4.0"
     eslint-plugin-svelte3 "github:sveltejs/eslint-plugin-svelte3#v0.4.3"
 
-"@minna-ui/jest-config@0.22.0-next.228":
-  version "0.22.0-next.228"
-  resolved "https://registry.yarnpkg.com/@minna-ui/jest-config/-/jest-config-0.22.0-next.228.tgz#eaec585c8534ff41eed3d5a5be6d024e62cf72bc"
-  integrity sha512-J16FylP37HvkPYlsgtgn2uJCXl77Yfmg9VA/aWBE5wvEtgEwCXHTp20H6JlsPCx8n7EiJB93kfzdrrlUM/TBig==
+"@minna-ui/jest-config@0.22.0-next.235":
+  version "0.22.0-next.235"
+  resolved "https://registry.yarnpkg.com/@minna-ui/jest-config/-/jest-config-0.22.0-next.235.tgz#17278c1ef6edbc3f09357c654387f80187d03210"
+  integrity sha512-L/0c2ZKa+BaZ7jBJ0oovJbv8/8kjcXvnMD6qNP7AttNbX21KPy1wm4YUuZuORkqxHtZSAUHPrrUFoe8kNQ22rg==
   dependencies:
     "@babel/core" "^7.4.0"
     "@babel/plugin-transform-modules-commonjs" "^7.4.0"
     "@babel/preset-typescript" "^7.1.0"
     "@types/jest" "^24.0.11"
-    "@types/node" "^11.11.6"
+    "@types/node" "^11.12.0"
     babel-core "7.0.0-bridge.0"
     babel-jest "^24.5.0"
     identity-obj-proxy "^3.0.0"
@@ -536,10 +536,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.9.4.tgz#ceb0048a546db453f6248f2d1d95e937a6f00a14"
   integrity sha512-Zl8dGvAcEmadgs1tmSPcvwzO1YRsz38bVJQvH1RvRqSR9/5n61Q1ktcDL0ht3FXWR+ZpVmXVwN1LuH4Ax23NsA==
 
-"@types/node@^11.11.6":
-  version "11.11.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.6.tgz#df929d1bb2eee5afdda598a41930fe50b43eaa6a"
-  integrity sha512-Exw4yUWMBXM3X+8oqzJNRqZSwUAaS4+7NdvHqQuFi/d+synz++xmX3QIf+BFqneW8N31R8Ky+sikfZUXq07ggQ==
+"@types/node@^11.12.0":
+  version "11.12.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.12.2.tgz#d7f302e74b10e9801d52852137f652d9ee235da8"
+  integrity sha512-c82MtnqWB/CqqK7/zit74Ob8H1dBdV7bK+BcErwtXbe0+nUGkgzq5NTDmRW/pAv2lFtmeNmW95b0zK2hxpeklg==
 
 "@types/prettier@^1.16.0":
   version "1.16.1"
