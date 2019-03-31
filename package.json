@@ -43,7 +43,7 @@
     "jest": "24.5.0",
     "prettier": "1.16.4",
     "remark-cli": "6.0.1",
-    "svelte": "3.0.0-beta.20",
+    "svelte": "3.0.0-beta.22",
     "tslib": "1.9.3",
     "typescript": "3.4.1"
   },
