@@ -1,7 +1,7 @@
 /* eslint-disable no-console, security/detect-object-injection */
 
 import * as colors from 'colorette';
-import { IReq, IRes, Next } from '../types';
+import { Req, Res, Next } from '../types';
 
 /** Byte size units. Let's hope our requests never get above `kB` ;) */
 const units = ['B', 'kB', 'MB', 'GB', 'TB'];
@@ -18,7 +18,7 @@ function humanizeSize(bytes: number): string {
 /**
  * Log server requests.
  */
-export function log(req: IReq, res: IRes, next: Next): void {
+export function log(req: Req, res: Res, next: Next): void {
   const start = process.hrtime();
   const write = res.write.bind(res);
   let byteLength = 0;
@@ -42,7 +42,9 @@ export function log(req: IReq, res: IRes, next: Next): void {
     // prettier-ignore
     console.log(`» ${timing} ${colors[color](`${statusCode}`)} ${method} ${originalUrl || url} ${colors.cyan(size)}`);
   }
+
   res.once('finish', writeLog);
   res.once('error', writeLog);
+
   next();
 }

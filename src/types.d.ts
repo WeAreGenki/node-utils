@@ -1,23 +1,20 @@
-// https://github.com/sveltejs/sapper/blob/master/src/interfaces.ts
-// https://github.com/sveltejs/sapper/blob/master/templates/src/server/middleware/types.ts
+/* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { ClientRequest, ServerResponse } from 'http';
+import { IncomingMessage, ServerResponse } from 'http';
 
-export interface IReq extends ClientRequest {
-  url: string;
-  baseUrl: string;
+export interface Req extends IncomingMessage {
+  /**
+   * URL before mangling, e.g. for internal routing. Express only.
+   * @see https://expressjs.com/en/api.html#req.originalUrl
+   */
   originalUrl: string;
-  method: string;
   path: string;
-  params: Record<string, string>;
-  query: Record<string, string>;
-  headers: Record<string, string>;
+  params: { [key: string]: string };
+  query: { [key: string]: string };
   rawBody: string;
-  body: object;
+  body: { [key: string]: any };
 }
 
-export interface IRes extends ServerResponse {}
-
-export { ServerResponse };
+export interface Res extends ServerResponse {}
 
 export type Next = () => void;
