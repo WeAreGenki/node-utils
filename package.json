@@ -13,7 +13,7 @@
     "lib"
   ],
   "scripts": {
-    "dev": "tsc --watch",
+    "dev": "tsc --watch --preserveWatchOutput",
     "build": "tsc",
     "prebuild": "rm -rf lib",
     "postbuild": "cp src/types.d.ts lib/",
@@ -33,14 +33,10 @@
     "colorette": "^1.0.7"
   },
   "devDependencies": {
-    "@minna-ui/eslint-config": "0.22.0-next.235",
-    "@minna-ui/jest-config": "0.22.0-next.235",
-    "@minna-ui/prettier-config": "0.22.0-next.235",
-    "@minna-ui/remarklint-config": "0.22.0-next.77",
-    "@minna-ui/ts-config": "0.22.0-next.235",
     "@wearegenki/renovate-config": "1.0.0",
     "eslint": "5.16.0",
-    "jest": "24.5.0",
+    "jest": "24.6.0",
+    "minna-tools": "0.22.0-next.274",
     "prettier": "1.16.4",
     "remark-cli": "6.0.1",
     "svelte": "3.0.0-beta.22",
@@ -50,8 +46,7 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@minna-ui/eslint-config",
-      "@minna-ui/eslint-config/node"
+      "./node_modules/minna-tools/eslint.js"
     ],
     "parserOptions": {
       "sourceType": "module"
@@ -63,11 +58,11 @@
   ],
   "remarkConfig": {
     "plugins": [
-      "@minna-ui/remarklint-config"
+      "minna-tools/remark"
     ]
   },
   "jest": {
-    "preset": "@minna-ui/jest-config",
+    "preset": "minna-tools",
     "collectCoverageFrom": [
       "src/**/*.ts"
     ]
