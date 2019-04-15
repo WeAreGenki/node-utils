@@ -1,4 +1,4 @@
-import { Req, Res, Next } from '../types';
+import { Next, Req, Res } from '../types';
 
 /**
  * Parse raw request body data and convert it to JSON.

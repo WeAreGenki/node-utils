@@ -1,4 +1,7 @@
 /**
+ * Node Utilities.
+ * Reusable utilities for node apps.
+ *
  * @license
  * Copyright 2019 We Are Genki Pty Ltd
  *

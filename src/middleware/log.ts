@@ -1,13 +1,13 @@
 /* eslint-disable no-console, security/detect-object-injection */
 
 import * as colors from 'colorette';
-import { Req, Res, Next } from '../types';
+import { Next, Req, Res } from '../types';
 
 /** Byte size units. Let's hope our requests never get above `kB` ;) */
 const units = ['B', 'kB', 'MB', 'GB', 'TB'];
 
 /**
- * Convert bytes into a human readable form.
+ * Convert bytes into a human readable representation.
  */
 function humanizeSize(bytes: number): string {
   const index = Math.floor(Math.log(bytes) / Math.log(1024));
@@ -23,7 +23,7 @@ export function log(req: Req, res: Res, next: Next): void {
   const write = res.write.bind(res);
   let byteLength = 0;
 
-  // monkey patch to calculate response byte size
+  // monkey patch write method to calculate response byte size
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   res.write = function writeFn(data: any, ...rest: any[]) {
     if (data) byteLength += data.length;
