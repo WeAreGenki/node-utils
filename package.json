@@ -26,9 +26,6 @@
     "test": "yarn lint && jest --notify --watch",
     "test-ci": "jest --coverage --runInBand --ci"
   },
-  "peerDependencies": {
-    "tslib": "1.9.3"
-  },
   "dependencies": {
     "colorette": "^1.0.7"
   },

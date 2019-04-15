@@ -5,7 +5,6 @@
   "compilerOptions": {
     "baseUrl": ".",
     "declaration": true,
-    "importHelpers": true,
     "module": "commonjs",
     "outDir": "lib",
     "target": "es2018",
