@@ -10,15 +10,6 @@
       "protocol": "inspector",
       "smartStep": true
     },
-    // @see https://github.com/sveltejs/sapper/pull/436
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "sapper: dev",
-      "program": "${workspaceFolder}/node_modules/sapper/dist/cli.js",
-      "args": ["dev"],
-      "autoAttachChildProcesses": true
-    },
     // https://github.com/Microsoft/vscode-recipes/tree/master/debugging-jest-tests
     {
       "type": "node",

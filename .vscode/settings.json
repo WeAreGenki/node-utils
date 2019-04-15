@@ -1,6 +1,5 @@
 {
   "editor.formatOnSave": true,
-  "eslint.alwaysShowStatus": true,
   "eslint.enable": true,
   "eslint.validate": [
     { "language": "javascript", "autoFix": true },
@@ -9,18 +8,5 @@
   ],
   "files.eol": "\n",
   "javascript.implicitProjectConfig.checkJs": true,
-  "prettier.eslintIntegration": true,
-  // recommended dictionary: https://github.com/WeAreGenki/dictionary
-  "spellright.language": ["en_GB"],
-  "spellright.documentTypes": [
-    "html",
-    "javascript",
-    "json",
-    "jsonc",
-    "markdown",
-    "plaintext",
-    "properties",
-    "typescript"
-  ],
-  "spellright.spellContext": "body code comments strings"
+  "prettier.eslintIntegration": true
 }
