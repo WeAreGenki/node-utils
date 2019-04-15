@@ -7,12 +7,11 @@ export interface Req extends IncomingMessage {
    * URL before mangling, e.g. for internal routing. Express only.
    * @see https://expressjs.com/en/api.html#req.originalUrl
    */
-  originalUrl: string;
-  path: string;
-  params: { [key: string]: string };
-  query: { [key: string]: string };
-  rawBody: string;
-  body: { [key: string]: any };
+  originalUrl?: string;
+  params?: { [key: string]: string };
+  query?: { [key: string]: string };
+  rawBody?: string;
+  body?: { [key: string]: any };
 }
 
 export interface Res extends ServerResponse {}
