@@ -33,7 +33,7 @@
     "@minna-ui/eslint-config": "0.22.0-next.23",
     "@minna-ui/jest-config": "0.22.0-next.23",
     "@minna-ui/prettier-config": "0.22.0-next.23",
-    "@minna-ui/remark-config": "0.22.0-next.23",
+    "@minna-ui/remark-config": "0.22.1",
     "@minna-ui/ts-config": "0.22.0-next.23",
     "@wearegenki/renovate-config": "1.0.0",
     "eslint": "5.16.0",

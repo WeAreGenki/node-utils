@@ -382,10 +382,10 @@
     "@types/prettier" "^1.16.0"
     deepmerge "^3.1.0"
 
-"@minna-ui/remark-config@0.22.0-next.23":
-  version "0.22.0-next.23"
-  resolved "https://registry.yarnpkg.com/@minna-ui/remark-config/-/remark-config-0.22.0-next.23.tgz#0cfaa0e93cea4958491548e67999fd63f44a62d5"
-  integrity sha512-XfOGGTPbRk2oepusp6McfKLm8E/bysIfQFWR6omqaw1WZzVee2TIo3IjLppwluMNlDkuTbqdiq6/TvVWjQwjuw==
+"@minna-ui/remark-config@0.22.1":
+  version "0.22.1"
+  resolved "https://registry.yarnpkg.com/@minna-ui/remark-config/-/remark-config-0.22.1.tgz#6fa9788c987b456c99bd1fd4c9769957af21a66b"
+  integrity sha512-4ZdCpMCB32YKpKBFTAKudCqA+EBDPJmvgpKZG2aihP+iYL5JoVBehqGlywxsM2S9ei/TyklsCPhGc13a/cSkdA==
   dependencies:
     remark-lint "^6.0.4"
     remark-preset-lint-consistent "^2.0.2"
