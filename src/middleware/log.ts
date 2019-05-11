@@ -16,7 +16,10 @@ function humanizeSize(bytes: number): string {
 }
 
 /**
- * Log server requests.
+ * Simple Node server request logger.
+ *
+ * Don't use this in serious apps for production, instead opt for a high
+ * performance solution like [pino](https://github.com/pinojs/pino-http).
  */
 export function log(req: Req, res: Res, next: Next): void {
   const start = process.hrtime();
