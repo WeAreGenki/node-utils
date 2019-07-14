@@ -34,7 +34,7 @@
     "@minna-ui/jest-config": "0.26.0",
     "@minna-ui/prettier-config": "0.26.0",
     "@minna-ui/remark-config": "0.26.0",
-    "@minna-ui/ts-config": "0.26.0",
+    "@minna-ui/ts-config": "0.27.0",
     "@wearegenki/renovate-config": "1.0.0",
     "eslint": "6.0.1",
     "jest": "24.8.0",
