@@ -329,10 +329,10 @@
     remark-preset-lint-markdown-style-guide "^2.1.3"
     remark-preset-lint-recommended "^3.0.3"
 
-"@minna-ui/ts-config@0.27.0":
-  version "0.27.0"
-  resolved "https://registry.yarnpkg.com/@minna-ui/ts-config/-/ts-config-0.27.0.tgz#dc6afd96a9c5d78075ad451fe173f39602837afb"
-  integrity sha512-JYLiEVhCf/AS9156008PyQI5qO6bWRd18McOXo5jHZuHTa70lJJGtIAnmeOML/ocLi6BgcF6Q4SWePOyt8yZAQ==
+"@minna-ui/ts-config@0.28.0":
+  version "0.28.0"
+  resolved "https://registry.yarnpkg.com/@minna-ui/ts-config/-/ts-config-0.28.0.tgz#7a296522668c04961122547a2c748511caba712a"
+  integrity sha512-JCR8axO9yGBxnKP0ZFbMgegpF8SkPr2fB79lCcTFdpVUv1Ko2vzJo4ROLGhcLu4xeFaYsPcz6PrNcJj140vbBg==
 
 "@types/babel__core@^7.1.0":
   version "7.1.2"
