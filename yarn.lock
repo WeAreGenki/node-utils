@@ -310,10 +310,10 @@
   dependencies:
     resolve "^1.11.1"
 
-"@minna-ui/jest-config@0.28.0":
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/@minna-ui/jest-config/-/jest-config-0.28.0.tgz#38ad6abb5077da76ddfc5bdbcbe9dc0b32b009d3"
-  integrity sha512-vfwbcUzTpv2n04pImN6ssTyAEgxHXIXzV6COMEYvjqjTiS38DEJUQf7R3rvscEA13ZbnHxsZCDI1JRjGnFzKJw==
+"@minna-ui/jest-config@0.29.0":
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/@minna-ui/jest-config/-/jest-config-0.29.0.tgz#2b9f55d5851c3453e8af0d50175e6edb37326795"
+  integrity sha512-3I835TylJod9R0N2isZPD/pXHPfddMlgWSgpBsDwBR/Ul0HjMYZNYJjkzyLolAkT1nS0EWKzhajAkmv90BBlJA==
   dependencies:
     "@types/jest" "^24.0.13"
     "@types/node" "^12.6.8"
