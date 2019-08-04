@@ -30,7 +30,7 @@
     "colorette": "^1.0.7"
   },
   "devDependencies": {
-    "@minna-ui/eslint-config": "0.30.0",
+    "@minna-ui/eslint-config": "0.31.0",
     "@minna-ui/jest-config": "0.31.0",
     "@minna-ui/prettier-config": "0.30.0",
     "@minna-ui/remark-config": "0.31.0",
