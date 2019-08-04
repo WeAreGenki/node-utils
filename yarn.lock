@@ -285,12 +285,12 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
-"@minna-ui/eslint-config@0.30.0":
-  version "0.30.0"
-  resolved "https://registry.yarnpkg.com/@minna-ui/eslint-config/-/eslint-config-0.30.0.tgz#2ac7c239c4ea221de37cd99ef65850137e64b3b9"
-  integrity sha512-wGFvJIt8SFstlhpDvNuishpdiq/AK18O4QKXiwprDLS9EVj1INkKValhRfkNQAcziWKv4VqPwtIMbVKsDoZQ/g==
+"@minna-ui/eslint-config@0.31.0":
+  version "0.31.0"
+  resolved "https://registry.yarnpkg.com/@minna-ui/eslint-config/-/eslint-config-0.31.0.tgz#1a223fbc72bbed428431746d7b068557e69491f4"
+  integrity sha512-GO339zEVE6It7wfZvA3VOcPgSvm1yrMvdpZsc8wrBoBpQoSOqxDu53uuMolc6FCOT9CUf4xkd/uSXjDH+Iqg0A==
   dependencies:
-    "@minna-ui/eslint-import-resolver" "^0.30.0"
+    "@minna-ui/eslint-import-resolver" "^0.31.0"
     "@types/eslint" "^4.16.6"
     "@typescript-eslint/eslint-plugin" "^1.13.0"
     "@typescript-eslint/parser" "^1.13.0"
@@ -303,10 +303,10 @@
     eslint-plugin-security "^1.4.0"
     eslint-plugin-svelte3 "^2.7.3"
 
-"@minna-ui/eslint-import-resolver@^0.30.0":
-  version "0.30.0"
-  resolved "https://registry.yarnpkg.com/@minna-ui/eslint-import-resolver/-/eslint-import-resolver-0.30.0.tgz#ce2b9fdf79043adbe91eecc0c3638e56bc0e31b6"
-  integrity sha512-RlpD7fyNDaHldMAP/9B/WOfHaBybOa3q8C0VzEY9PdJfar+BTFA85i/Y42jZpYJ85hylRG3s38fLciqxuwUhBw==
+"@minna-ui/eslint-import-resolver@^0.31.0":
+  version "0.31.0"
+  resolved "https://registry.yarnpkg.com/@minna-ui/eslint-import-resolver/-/eslint-import-resolver-0.31.0.tgz#25bbe09ca78f2e87f4ba7b7df6b96e35ded53519"
+  integrity sha512-kxJvBZotaipj6qfcoce+pXujRmDtuYg93q35f6Pyl4zeCcbOBysgWE61GO3K11Z6g386hfrZgBlKU2GIyu0IEw==
   dependencies:
     resolve "^1.12.0"
 
