@@ -342,10 +342,10 @@
     jest-environment-jsdom-fifteen "^1.0.0"
     sucrase "^3.10.1"
 
-"@minna-ui/prettier-config@0.32.0":
-  version "0.32.0"
-  resolved "https://registry.yarnpkg.com/@minna-ui/prettier-config/-/prettier-config-0.32.0.tgz#ff9b88d44008a59b3ab00e406f993b5c4eb63026"
-  integrity sha512-RNVBjdC42hgoRSaxCUs5KzjDNKFi8vG5tP1yMl/hx88K6Lke5PIeaMAPg/qWS49Iqy59qSmfSvjyW6o7SigDNw==
+"@minna-ui/prettier-config@0.33.0":
+  version "0.33.0"
+  resolved "https://registry.yarnpkg.com/@minna-ui/prettier-config/-/prettier-config-0.33.0.tgz#891be0bc7f245d8a510821c6168129425c1ecb05"
+  integrity sha512-g446/SqqEvHNnqwRYgUfIYNCJ2EGWFXaK510y+d874BEisQgFbsWsexj/xTRO7uSb0+dWsPoHDyKPw0iGx47+w==
 
 "@minna-ui/remark-config@0.32.0":
   version "0.32.0"
