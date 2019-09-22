@@ -1,9 +1,9 @@
-/* eslint-disable no-console, security/detect-object-injection */
+/* eslint-disable security/detect-object-injection */
 
 import * as colors from 'colorette';
 import { Next, Req, Res } from '../types';
 
-/** Byte size units. Let's hope our requests never get above `kB` ;) */
+/** Byte size units. Let's hope our requests never get above `kB`... */
 const units = ['B', 'kB', 'MB', 'GB', 'TB'];
 
 /**
@@ -27,7 +27,7 @@ export function log(req: Req, res: Res, next: Next): void {
   let byteLength = 0;
 
   // monkey patch write method to calculate response byte size
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/unbound-method
   res.write = function writeFn(data: any, ...rest: any[]) {
     if (data) byteLength += data.length;
     return write(data, ...rest);
@@ -43,6 +43,7 @@ export function log(req: Req, res: Res, next: Next): void {
     const timing = `${+(duration[1] / 1e6).toFixed(2)}ms`;
     const size = humanizeSize(byteLength);
     // prettier-ignore
+    // eslint-disable-next-line no-console
     console.log(`» ${timing} ${colors[color](`${statusCode}`)} ${method} ${originalUrl || url} ${colors.cyan(size)}`);
   }
 

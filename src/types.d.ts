@@ -4,7 +4,8 @@ import { IncomingMessage, ServerResponse } from 'http';
 
 export interface Req extends IncomingMessage {
   /**
-   * URL before mangling, e.g. for internal routing. Express only.
+   * URL before mangling e.g., for internal routing. Express only.
+   *
    * @see https://expressjs.com/en/api.html#req.originalUrl
    */
   originalUrl?: string;

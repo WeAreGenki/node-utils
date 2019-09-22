@@ -17,12 +17,10 @@ export function parse(req: Req, res: Res, next: Next): void {
 
     const contentType = req.headers['content-type'];
 
-    if (contentType && contentType.indexOf('application/json') === 0) {
+    if (contentType && contentType.startsWith('application/json')) {
       try {
         req.body = JSON.parse(data);
-      } catch (err) {
-        // noop
-      }
+      } catch (err) {}
     }
 
     next();
