@@ -7,16 +7,16 @@
   "homepage": "https://github.com/WeAreGenki/node-utils",
   "author": "Max Milton <max@wearegenki.com>",
   "license": "Apache-2.0",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
   "scripts": {
     "dev": "tsc --watch --preserveWatchOutput",
     "build": "tsc",
-    "prebuild": "rm -rf lib",
-    "postbuild": "cp src/types.d.ts lib/",
+    "prebuild": "rm -rf dist",
+    "postbuild": "cp src/types.d.ts dist/",
     "release": "yarn publish",
     "prerelease": "yarn lint && yarn test-ci && yarn build",
     "lint": "yarn lint:md && yarn lint:js && yarn lint:types",
@@ -53,7 +53,7 @@
     }
   },
   "eslintIgnore": [
-    "lib/**",
+    "dist/**",
     "test/coverage/**"
   ],
   "remarkConfig": {

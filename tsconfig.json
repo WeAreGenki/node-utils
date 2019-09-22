@@ -6,7 +6,7 @@
     "baseUrl": ".",
     "declaration": true,
     "module": "commonjs",
-    "outDir": "lib",
+    "outDir": "dist",
     "target": "es2018",
 
     // disable overly strict rules
