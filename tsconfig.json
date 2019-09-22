@@ -12,5 +12,6 @@
     // disable overly strict rules
     "noUnusedParameters": false
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["__tests__"]
 }
