@@ -30,27 +30,21 @@
     "colorette": "^1.0.7"
   },
   "devDependencies": {
-    "@minna-ui/eslint-config": "0.32.0",
-    "@minna-ui/jest-config": "0.32.0",
-    "@minna-ui/prettier-config": "0.32.0",
-    "@minna-ui/remark-config": "0.32.0",
-    "@minna-ui/ts-config": "0.32.0",
     "@wearegenki/renovate-config": "1.0.0",
-    "eslint": "6.3.0",
+    "eslint": "6.4.0",
     "jest": "24.9.0",
+    "minna-tools-essential": "0.34.0",
     "prettier": "1.18.2",
     "remark-cli": "7.0.0",
     "tslib": "1.10.0",
     "typescript": "3.6.3"
   },
+  "prettier": "minna-tools-essential/prettier",
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@minna-ui/eslint-config"
-    ],
-    "parserOptions": {
-      "sourceType": "module"
-    }
+      "./node_modules/minna-tools-essential/eslint.js"
+    ]
   },
   "eslintIgnore": [
     "dist/**",
@@ -58,11 +52,11 @@
   ],
   "remarkConfig": {
     "plugins": [
-      "@minna-ui/remark-config"
+      "minna-tools-essential/remark"
     ]
   },
   "jest": {
-    "preset": "@minna-ui/jest-config",
+    "preset": "minna-tools-essential",
     "collectCoverageFrom": [
       "src/**/*.ts"
     ]
