@@ -330,13 +330,13 @@
   dependencies:
     resolve "^1.12.0"
 
-"@minna-ui/jest-config@0.32.0":
-  version "0.32.0"
-  resolved "https://registry.yarnpkg.com/@minna-ui/jest-config/-/jest-config-0.32.0.tgz#2c0fa3298fbdbd845bf096343a3146c3132a42db"
-  integrity sha512-5UV3tRD7JsyqJIhh53u+xCYbt3xhwMEdXG7OjFKBWMM6QGz9qyCxH8ivm6PYWBv5GCGRGLLsXYLliR6muGe+YA==
+"@minna-ui/jest-config@0.34.0":
+  version "0.34.0"
+  resolved "https://registry.yarnpkg.com/@minna-ui/jest-config/-/jest-config-0.34.0.tgz#05635a44f208d8cf13b97bcd94260e7dec4ddef7"
+  integrity sha512-tutrsye0DQM3VA9k8zpQuupEjctRK5Tpy7Mu0I+x2OSb8srQO3V7KVrfQ9FMffKcdb1eZcJj1LCR86B1Gz5O6Q==
   dependencies:
     "@types/jest" "^24.0.18"
-    "@types/node" "^12.7.1"
+    "@types/node" "^12.7.5"
     identity-obj-proxy "^3.0.0"
     jest-circus "^24.9.0"
     jest-environment-jsdom-fifteen "^1.0.0"
@@ -450,10 +450,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.3.tgz#bdfd69d61e464dcc81b25159c270d75a73c1a636"
   integrity sha512-Il2DtDVRGDcqjDtE+rF8iqg1CArehSK84HZJCT7AMITlyXRBpuPhqGLDQMowraqqu1coEaimg4ZOqggt6L6L+A==
 
-"@types/node@^12.7.1":
-  version "12.7.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.3.tgz#27b3f40addaf2f580459fdb405222685542f907a"
-  integrity sha512-3SiLAIBkDWDg6vFo0+5YJyHPWU9uwu40Qe+v+0MH8wRKYBimHvvAOyk3EzMrD/TrIlLYfXrqDqrg913PynrMJQ==
+"@types/node@^12.7.5":
+  version "12.7.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.5.tgz#e19436e7f8e9b4601005d73673b6dc4784ffcc2f"
+  integrity sha512-9fq4jZVhPNW8r+UYKnxF1e2HkDWOWKM5bC2/7c9wPV835I0aOrVbS/Hw/pWPk2uKrNXQqg9Z959Kz+IYDd5p3w==
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
