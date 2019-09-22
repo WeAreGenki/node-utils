@@ -1,6 +1,6 @@
 {
   "name": "@wearegenki/node-utils",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Reusable utilities for node apps.",
   "repository": "https://github.com/WeAreGenki/node-utils",
   "bugs": "https://github.com/WeAreGenki/node-utils/issues",
