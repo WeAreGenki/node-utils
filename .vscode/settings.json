@@ -1,5 +1,6 @@
 {
   "editor.formatOnSave": true,
+  "eslint.autoFixOnSave": true,
   "eslint.enable": true,
   "eslint.validate": [
     { "language": "javascript", "autoFix": true },
@@ -7,6 +8,5 @@
     { "language": "typescript", "autoFix": true }
   ],
   "files.eol": "\n",
-  "javascript.implicitProjectConfig.checkJs": true,
-  "prettier.eslintIntegration": true
+  "javascript.implicitProjectConfig.checkJs": true
 }
