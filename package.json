@@ -18,13 +18,14 @@
     "prebuild": "rm -rf dist",
     "postbuild": "cp src/types.d.ts dist/",
     "release": "yarn publish",
-    "prerelease": "yarn lint && yarn test-ci && yarn build",
+    "prerelease": "yarn prepack && yarn lint && yarn test-ci",
+    "prepack": "yarn build",
     "lint": "yarn lint:md && yarn lint:js && yarn lint:types",
     "lint:md": "remark --frail --quiet .",
     "lint:js": "eslint --ext html,js,md,ts .",
     "lint:types": "tsc --noEmit",
     "test": "jest --notify --watch",
-    "test-ci": "jest --coverage --runInBand --ci"
+    "test-ci": "jest --coverage --ci"
   },
   "dependencies": {
     "colorette": "^1.0.7"
