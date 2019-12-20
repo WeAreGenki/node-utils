@@ -38,7 +38,7 @@
     "prettier": "1.19.1",
     "remark-cli": "7.0.1",
     "tslib": "1.10.0",
-    "typescript": "3.7.3"
+    "typescript": "3.7.4"
   },
   "prettier": "minna-tools-essential/prettier",
   "eslintConfig": {
