@@ -8,5 +8,8 @@
     { "language": "typescript", "autoFix": true }
   ],
   "files.eol": "\n",
-  "javascript.implicitProjectConfig.checkJs": true
+  "javascript.implicitProjectConfig.checkJs": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
 }
