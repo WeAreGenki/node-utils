@@ -2,13 +2,9 @@
   "editor.formatOnSave": true,
   "eslint.autoFixOnSave": true,
   "eslint.enable": true,
-  "eslint.validate": [
-    { "language": "javascript", "autoFix": true },
-    { "language": "markdown", "autoFix": true },
-    { "language": "typescript", "autoFix": true }
-  ],
+  "eslint.validate": ["javascript", "markdown", "typescript"],
   "files.eol": "\n",
-  "javascript.implicitProjectConfig.checkJs": true,
+  "js/ts.implicitProjectConfig.checkJs": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   }
