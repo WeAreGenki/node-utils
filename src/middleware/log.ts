@@ -1,7 +1,7 @@
 /* eslint-disable security/detect-object-injection */
 
 import * as colors from 'colorette';
-import { Next, Req, Res } from '../types';
+import type { Next, Req, Res } from '../types';
 
 /** Byte size units. Let's hope our requests never get above `kB`... */
 const units = ['B', 'kB', 'MB', 'GB', 'TB'];
