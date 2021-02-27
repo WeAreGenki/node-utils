@@ -1,3 +1,6 @@
+// eslint-disable-next-line jest/no-export
+export {};
+
 // import { humanizeSize, log } from '../log';
 
 describe('humanizeSize function', () => {
