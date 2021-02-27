@@ -71,5 +71,6 @@
     "extends": [
       "@wearegenki"
     ]
-  }
+  },
+  "type": "module"
 }
