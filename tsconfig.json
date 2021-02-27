@@ -4,10 +4,14 @@
   "extends": "@minna-ui/ts-config",
   "compilerOptions": {
     "baseUrl": ".",
-    "declaration": true,
-    "module": "commonjs",
     "outDir": "dist",
-    "target": "es2018",
+    "module": "esnext",
+    "target": "esnext",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+
+    "isolatedModules": true,
 
     // disable overly strict rules
     "noUnusedParameters": false
