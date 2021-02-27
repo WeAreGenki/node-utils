@@ -1,10 +1,16 @@
-/* eslint-disable security/detect-object-injection */
+/* eslint-disable no-console, security/detect-object-injection */
 
-import * as colors from 'colorette';
+import { cyan, green, red, yellow } from 'colorette';
 import type { Next, Req, Res } from '../types';
 
-/** Byte size units. Let's hope our requests never get above `kB`... */
 const units = ['B', 'kB', 'MB', 'GB', 'TB'];
+
+/**
+ * Convert a number to no more than 2 trailing numbers after the decimal.
+ */
+function toSignificant(num: number): string {
+  return `${parseFloat(num.toFixed(2))}`;
+}
 
 /**
  * Convert bytes into a human readable representation.
@@ -12,7 +18,7 @@ const units = ['B', 'kB', 'MB', 'GB', 'TB'];
 function humanizeSize(bytes: number): string {
   const index = Math.floor(Math.log(bytes) / Math.log(1024));
   if (index < 0) return '';
-  return `${+((bytes / 1024) ** index).toFixed(2)} ${units[index]}`;
+  return `${toSignificant((bytes / 1024) ** index)} ${units[index]}`;
 }
 
 /**
@@ -26,25 +32,27 @@ export function log(req: Req, res: Res, next: Next): void {
   const write = res.write.bind(res);
   let byteLength = 0;
 
-  // monkey patch write method to calculate response byte size
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/unbound-method
-  res.write = function writeFn(data: any, ...rest: any[]) {
-    if (data) byteLength += data.length;
-    return write(data, ...rest);
+  // Monkey patch write method to calculate response size (doesn't factor in
+  // multibyte characters so the true byte size may differ)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  res.write = (chunk: string | Buffer, encoding?: any, cb?: any) => {
+    if (chunk) byteLength += chunk.length;
+    return write(chunk, encoding, cb);
   };
 
   function writeLog(): void {
-    const duration = process.hrtime(start);
+    const duration = process.hrtime(start)[1] / 1e6;
     const { method, originalUrl, url } = req;
     const { statusCode } = res;
-    const color =
-      // eslint-disable-next-line no-nested-ternary
-      statusCode >= 400 ? 'red' : statusCode >= 300 ? 'yellow' : 'green';
-    const timing = `${+(duration[1] / 1e6).toFixed(2)}ms`;
+    // eslint-disable-next-line no-nested-ternary
+    const color = statusCode >= 400 ? red : statusCode >= 300 ? yellow : green;
+    const timing = `${toSignificant(duration)}ms`;
     const size = humanizeSize(byteLength);
-    // prettier-ignore
-    // eslint-disable-next-line no-console
-    console.log(`» ${timing} ${colors[color](`${statusCode}`)} ${method} ${originalUrl || url} ${colors.cyan(size)}`);
+    console.log(
+      `» ${timing}${color(`${statusCode}`)} ${method || 'NO_METHOD'} ${
+        originalUrl || url || 'NO_URL'
+      }${cyan(size)}`,
+    );
   }
 
   res.once('finish', writeLog);
