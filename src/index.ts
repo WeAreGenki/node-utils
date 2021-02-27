@@ -2,8 +2,8 @@
  * Node Utilities.
  * Reusable utilities for node apps.
  *
- * @license
- * Copyright 2019 We Are Genki Pty Ltd
+ * @license Apache-2.0
+ * Copyright 2021 We Are Genki Pty Ltd
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
