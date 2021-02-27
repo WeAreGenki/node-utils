@@ -1,46 +1,50 @@
 {
   "name": "@wearegenki/node-utils",
   "version": "0.4.3",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Reusable utilities for node apps.",
-  "repository": "https://github.com/WeAreGenki/node-utils",
-  "bugs": "https://github.com/WeAreGenki/node-utils/issues",
-  "homepage": "https://github.com/WeAreGenki/node-utils",
-  "author": "Max Milton <max@wearegenki.com>",
   "license": "Apache-2.0",
+  "repository": "https://github.com/WeAreGenki/node-utils",
+  "author": "Max Milton <max@wearegenki.com>",
+  "homepage": "https://github.com/WeAreGenki/node-utils",
+  "bugs": "https://github.com/WeAreGenki/node-utils/issues",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "dev": "tsc --watch --preserveWatchOutput",
+    "__build": "esbuild src/index.ts --bundle --outdir=dist --platform=node --target=node14",
     "build": "tsc",
-    "prebuild": "rm -rf dist",
-    "postbuild": "cp src/types.d.ts dist/",
-    "release": "yarn publish",
-    "prerelease": "yarn prepack && yarn lint && yarn test-ci",
-    "prepack": "yarn build",
+    "dev": "tsc --watch --preserveWatchOutput",
     "lint": "yarn lint:md && yarn lint:js && yarn lint:types",
-    "lint:md": "remark --frail --quiet .",
     "lint:js": "eslint --ext html,js,md,ts .",
+    "lint:md": "remark --frail --quiet .",
     "lint:types": "tsc --noEmit",
+    "prebuild": "rm -rf dist",
+    "prepack": "yarn build",
+    "prerelease": "yarn prepack && yarn lint && yarn test-ci",
+    "release": "yarn publish",
     "test": "jest --notify --watch",
     "test-ci": "jest --coverage --ci"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
-    "colorette": "^1.0.7"
+    "colorette": "^1.2.2"
   },
   "devDependencies": {
     "@wearegenki/renovate-config": "1.0.0",
+    "esbuild": "0.8.53",
     "eslint": "7.20.0",
     "jest": "26.6.3",
-    "minna-tools-essential": "0.36.0",
+    "minna-tools-essential": "0.36.1-next.57",
     "prettier": "2.2.1",
     "remark-cli": "9.0.0",
     "tslib": "2.1.0",
     "typescript": "4.2.2"
   },
-  "prettier": "minna-tools-essential/prettier",
   "eslintConfig": {
     "root": true,
     "extends": [
@@ -51,26 +55,21 @@
     "dist/**",
     "test/coverage/**"
   ],
-  "remarkConfig": {
-    "plugins": [
-      "minna-tools-essential/remark"
-    ]
-  },
   "jest": {
     "preset": "minna-tools-essential",
     "collectCoverageFrom": [
       "src/**/*.ts"
     ]
   },
+  "prettier": "minna-tools-essential/prettier",
+  "remarkConfig": {
+    "plugins": [
+      "minna-tools-essential/remark"
+    ]
+  },
   "renovate": {
     "extends": [
       "@wearegenki"
     ]
-  },
-  "engines": {
-    "node": ">8.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
