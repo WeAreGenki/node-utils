@@ -18,7 +18,7 @@ function toSignificant(num: number): string {
 function humanizeSize(bytes: number): string {
   const index = Math.floor(Math.log(bytes) / Math.log(1024));
   if (index < 0) return '';
-  return `${toSignificant((bytes / 1024) ** index)} ${units[index]}`;
+  return `${toSignificant(bytes / 1024 ** index)} ${units[index]}`;
 }
 
 /**
