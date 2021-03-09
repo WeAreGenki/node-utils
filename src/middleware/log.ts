@@ -51,7 +51,7 @@ export function log(req: Req, res: Res, next: Next): void {
     console.log(
       `» ${timing} ${color(`${statusCode}`)} ${method || 'NO_METHOD'} ${
         originalUrl || url || 'NO_URL'
-      }${cyan(size)}`,
+      } ${cyan(size)}`,
     );
   }
 
