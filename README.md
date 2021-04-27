@@ -1,5 +1,7 @@
+[![Build status](https://img.shields.io/github/workflow/status/WeAreGenki/node-utils/ci)](https://github.com/WeAreGenki/node-utils/actions)
 [![NPM version](https://img.shields.io/npm/v/@wearegenki/node-utils.svg)](https://www.npmjs.com/package/@wearegenki/node-utils)
-[![Licence](https://img.shields.io/npm/l/@wearegenki/node-utils.svg)](./LICENCE)
+[![Coverage status](https://img.shields.io/codeclimate/coverage/WeAreGenki/node-utils)](https://codeclimate.com/github/WeAreGenki/node-utils)
+[![Licence](https://img.shields.io/github/license/WeAreGenki/node-utils)](https://github.com/WeAreGenki/node-utils/blob/master/LICENCE)
 
 # Node Utils
 
