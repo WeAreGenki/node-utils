@@ -25,8 +25,8 @@
     "prepack": "yarn build",
     "prerelease": "yarn prepack && yarn lint && yarn test-ci",
     "release": "yarn publish",
-    "test": "jest --notify --watch",
-    "test-ci": "jest --coverage --ci"
+    "test": "jest --coverage --ci",
+    "test-dev": "jest --notify --watch"
   },
   "files": [
     "dist"
