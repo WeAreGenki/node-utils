@@ -35,7 +35,7 @@
     "colorette": "^1.2.2"
   },
   "devDependencies": {
-    "esbuild": "0.12.20",
+    "esbuild": "0.12.26",
     "eslint": "7.32.0",
     "jest": "26.6.3",
     "minna-tools-essential": "0.36.1-next.57",
